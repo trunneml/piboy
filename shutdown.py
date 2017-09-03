@@ -27,5 +27,6 @@ if __name__ == "__main__":
         GPIO.setmode(GPIO.BCM)
         watch_gpio_pin(DEFAULT_GPIO_PIN)
     finally:
+        print("Clean up and good bye!")
         GPIO.cleanup()
 
